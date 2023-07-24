@@ -35,7 +35,8 @@ class userAuthController extends Controller {
 
     phoneNumber = phoneNumber.trim();
     this.phoneNumber = phoneNumber;
-    this.code = generateRandomNumber(6);
+    // this.code = generateRandomNumber(6);
+    this.code = generateRandomNumber(5);
 
     const result = await this.saveUser(phoneNumber);
     if (!result) throw createError.Unauthorized('ورود شما انجام نشد.');
