@@ -1,6 +1,6 @@
 const MenuIcon = ({ isMobile = true }) => {
   return (
-    <button className='text-primary-800'>
+    <div className='text-primary-800'>
       {isMobile && (
         <span>
           <svg
@@ -20,7 +20,7 @@ const MenuIcon = ({ isMobile = true }) => {
           </svg>
         </span>
       )}
-    </button>
+    </div>
   );
 };
 
