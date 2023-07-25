@@ -5,6 +5,7 @@ import './globals.css';
 import { darkTheme, lightTheme } from './theme';
 import { ThemeProvider, CssBaseline } from '@mui/material';
 import { ChangeEvent, useState } from 'react';
+import NavBar from './NavBar';
 
 export default function RootLayout({ children }) {
   let [useDarkTheme, setUseDarkTheme] = useState(false);
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
       <ThemeProvider theme={theme}>
         <body id='__next' className={`${estedadFont.variable} font-sans`}>
           <CssBaseline />
+          <NavBar />
           {children}
         </body>
       </ThemeProvider>
