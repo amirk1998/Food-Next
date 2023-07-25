@@ -4,6 +4,51 @@
 
 @import './fonts.css';
 
+@layer base {
+  :root {
+    --background-app-rgb: 255, 255, 255;
+
+    --color-primary-800: 65, 127, 86; /* Primary Color*/
+    --color-primary-700: 78, 153, 104;
+    --color-primary-600: 97, 174, 123;
+    --color-primary-500: 124, 188, 145;
+    --color-primary-400: 150, 201, 167;
+    --color-primary-300: 176, 215, 189;
+    --color-primary-200: 202, 228, 211;
+    --color-primary-100: 229, 242, 233;
+
+    --color-shade-700: 8, 16, 11;
+    --color-shade-600: 16, 32, 22;
+    --color-shade-500: 24, 48, 32;
+    --color-shade-400: 33, 64, 43;
+    --color-shade-300: 41, 79, 54;
+    --color-shade-200: 49, 95, 65;
+    --color-shade-100: 57, 111, 75;
+
+    --color-secondary-900: 12, 12, 12;
+    --color-secondary-800: 53, 53, 53;
+    --color-secondary-700: 113, 113, 113;
+    --color-secondary-600: 117, 117, 117;
+    --color-secondary-500: 173, 173, 173;
+    --color-secondary-400: 203, 203, 203;
+    --color-secondary-300: 237, 237, 237;
+    --color-secondary-200: 225, 225, 225;
+    --color-secondary-100: 249, 249, 249;
+
+    --color-success: 0, 159, 109;
+    --color-success-light: 0, 186, 136;
+    --color-success-extraLight: 243, 253, 250;
+
+    --color-error: 195, 0, 0;
+    --color-error-light: 237, 46, 46;
+    --color-error-extraLight: 255, 242, 242;
+
+    --color-warning: 169, 121, 28;
+    --color-warning-light: 244, 183, 64;
+    --color-warning-extraLight: 255, 248, 225;
+  }
+}
+
 html,
 body {
   padding: 0;
