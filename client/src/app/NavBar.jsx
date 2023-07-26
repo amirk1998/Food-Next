@@ -29,8 +29,12 @@ const NavBar = () => {
           isSidebarOpen ? 'translate-x-0' : 'translate-x-full'
         } transition-transform`}
         >
-          <SidebarMenu />
+          <SidebarMenu setIsSidebarOpen={setIsSidebarOpen} />
         </div>
+      </div>
+      {/* Desktop NavBar */}
+      <div className='hidden items-center justify-between bg-red-200 md:flex'>
+        Navbar
       </div>
     </div>
   );
