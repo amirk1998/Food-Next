@@ -57,6 +57,10 @@
   .btn {
     @apply rounded bg-primary-800 p-2 text-center text-white transition-all duration-300 hover:bg-shade-200 focus:bg-shade-300 md:rounded-lg md:px-4 md:py-2;
   }
+
+  .searchField__input {
+    @apply w-full rounded border border-secondary-400 bg-red-200 px-4 py-2 text-secondary-800 placeholder-secondary-800 outline-none transition-all duration-200 ease-in-out focus:border-primary-800;
+  }
 }
 
 html,
