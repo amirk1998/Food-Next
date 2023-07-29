@@ -7,20 +7,24 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
+import { useWindowSize } from '@uidotdev/usehooks';
+
 const styles = {
   '--swiper-navigation-color': 'white',
   '--swiper-navigation-size': '32px',
   '--swiper-pagination-color': '#417F56',
   '--swiper-pagination-bullet-size': '12px',
   '--swiper-pagination-bullet-inactive-color': '#fff',
+  '--swiper-pagination-bottom': '2px',
 };
 
 const ImageSlider = ({ slides }) => {
+  const size = useWindowSize();
   return (
     <div>
       <Swiper
         dir='ltr'
-        navigation={window.innerWidth > 760 ? true : false}
+        navigation={size.width > 760 ? true : false}
         pagination={{
           clickable: true,
         }}
