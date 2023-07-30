@@ -79,11 +79,12 @@ export default function Home() {
       <h1 className='mb-3 mt-6 text-center text-base font-bold leading-snug'>
         منوی رستوران
       </h1>
-      <div className='grid w-full grid-cols-2 grid-rows-2 gap-4 px-5 lg:grid-cols-4 lg:grid-rows-1 lg:px-12'>
+      <div className='grid w-full grid-cols-2 grid-rows-2 gap-4 px-5 lg:px-12 xl:grid-cols-4 xl:grid-rows-1'>
         {foodItems.map((item, index) => {
           return <FoodComponent item={item} key={item.id} />;
         })}
       </div>
+      <div className='mt-6 h-[340px] w-full bg-red-100'>Hello</div>
     </main>
   );
 }
