@@ -8,12 +8,18 @@ import { useState } from 'react';
 import SidebarMenu from './Sidebar';
 import SearchIcon from '@/public/icons/SearchIcon';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import BranchNavbar from '@/components/BranchNavbar';
+import MenuNavbar from '@/components/MenuNavbar';
 
 const NavBar = () => {
+  const pathname = usePathname();
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
+  console.log(pathname);
+
   return (
-    <header className=' w-full px-5 py-4 lg:h-[112px] lg:max-w-screen-lg lg:px-[108px] lg:py-8 xl:max-w-screen-xl'>
+    <header className=' w-full px-5 py-4 lg:h-[112px] lg:px-[108px] lg:py-8 '>
       <nav>
         {/* Mobile NavBar */}
         <div className='flex items-center justify-between  md:hidden'>
@@ -42,8 +48,70 @@ const NavBar = () => {
           <TitleText isMobile={false} />
           {/* Section 2 Menu */}
           <ul className='flex flex-1 items-center justify-center gap-x-6'>
+            {/* # LI #1 */}
             <li className='text-xl'>
-              <Link href='/' className='block'></Link>
+              <Link
+                href='/'
+                className={
+                  pathname === '/'
+                    ? 'text-xl font-bold text-primary-800 underline decoration-current underline-offset-8'
+                    : 'text-xl font-bold text-secondary-700'
+                }
+              >
+                صفحه اصلی
+              </Link>
+            </li>
+
+            {/* # LI #2 */}
+            <li className='text-xl font-bold text-secondary-700'>
+              <BranchNavbar />
+            </li>
+
+            {/* # LI #3 */}
+            <li className='text-xl font-bold text-secondary-700'>
+              <MenuNavbar />
+            </li>
+
+            {/* # LI #4 */}
+            <li className='text-xl'>
+              <Link
+                href='/#'
+                className={
+                  pathname === ''
+                    ? 'text-xl font-bold text-primary-800 underline decoration-current underline-offset-8'
+                    : 'text-xl font-bold text-secondary-700'
+                }
+              >
+                اعطای نمایندگی
+              </Link>
+            </li>
+
+            {/* # LI #5 */}
+            <li className='text-xl'>
+              <Link
+                href='/#'
+                className={
+                  pathname === '/about-us'
+                    ? 'text-xl font-bold text-primary-800 underline decoration-current underline-offset-8'
+                    : 'text-xl font-bold text-secondary-700'
+                }
+              >
+                درباره ما
+              </Link>
+            </li>
+
+            {/* # LI #6 */}
+            <li className='text-xl'>
+              <Link
+                href='/#'
+                className={
+                  pathname === '/contact-us'
+                    ? 'text-xl font-bold text-primary-800 underline decoration-current underline-offset-8'
+                    : 'text-xl font-bold text-secondary-700'
+                }
+              >
+                تماس با ما
+              </Link>
             </li>
           </ul>
           {/* Section 3 Icons */}

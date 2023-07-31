@@ -18,35 +18,35 @@ const ProfileDropDown = ({ isMobile = true }) => {
       className='z-20'
     >
       <Dropdown.Item
-        className='flex items-center gap-x-1 px-2 text-sm'
+        className='flex items-center gap-x-1 stroke-secondary-800 px-2 text-sm'
         icon={ProfileItem}
       >
         پروفایل
       </Dropdown.Item>
       <Dropdown.Divider />
       <Dropdown.Item
-        className='flex items-center gap-x-1 px-2'
+        className='flex items-center gap-x-1 stroke-secondary-800 px-2 text-sm'
         icon={WalletIcon}
       >
         پیگیری سفارش
       </Dropdown.Item>
       <Dropdown.Divider />
       <Dropdown.Item
-        className='flex items-center gap-x-1 px-2'
+        className='flex items-center gap-x-1 stroke-secondary-800 px-2 text-sm'
         icon={HeartIcon}
       >
         علاقه مندی ها
       </Dropdown.Item>
       <Dropdown.Divider />
       <Dropdown.Item
-        className='flex items-center gap-x-1 px-2'
+        className='flex items-center gap-x-1 stroke-secondary-800 px-2 text-sm'
         icon={LocationIcon}
       >
         آدرس های من
       </Dropdown.Item>
       <Dropdown.Divider />
       <Dropdown.Item
-        className='flex items-center gap-x-1 px-2'
+        className='flex items-center gap-x-1 stroke-secondary-800 px-2 text-sm'
         icon={LogoutIcon}
       >
         خروج از حساب

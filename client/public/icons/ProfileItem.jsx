@@ -4,8 +4,8 @@ const ProfileItem = () => {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
-      className='h-4 w-4 md:h-6 md:w-6 '
-      viewBox='0 0 24 24'
+      className='h-4 w-4 '
+      viewBox='0 0 16 16'
       fill='currentColor'
     >
       <path
