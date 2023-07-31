@@ -8,9 +8,15 @@ import ProfileItem from '@/public/icons/ProfileItem';
 import WalletIcon from '@/public/icons/WalletIcon';
 import { Dropdown } from 'flowbite-react';
 
-const ProfileDropDown = () => {
+const ProfileDropDown = ({ isMobile = true }) => {
   return (
-    <Dropdown dir='rtl' inline label={<ProfileIcon />} arrowIcon={null}>
+    <Dropdown
+      dir='rtl'
+      inline
+      label={<ProfileIcon isMobile={isMobile} />}
+      arrowIcon={null}
+      className='z-20'
+    >
       <Dropdown.Item
         className='flex items-center gap-x-1 px-2 text-sm'
         icon={ProfileItem}

@@ -108,7 +108,8 @@ export default function Home() {
           />
         </div>
         {/* Text */}
-        <div className='z-10 flex flex-col gap-y-6 px-5 py-4 text-white lg:flex-row lg:justify-between lg:gap-x-[232px] lg:gap-y-0 lg:px-[108px] lg:py-0'>
+
+        <div className='z-10 flex flex-col gap-y-6 px-5 py-4 text-white lg:flex-row lg:gap-x-[232px] lg:gap-y-0 lg:px-[108px] lg:py-0'>
           <div className='flex flex-1 flex-col lg:py-12'>
             <h1 className='mb-2 text-base font-bold leading-7 md:mb-4 md:text-lg lg:mb-6 lg:text-2xl'>
               رستوران‌های زنجیره‌ای ترخینه

@@ -7,7 +7,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-import { useWindowSize } from '@uidotdev/usehooks';
+// import { useWindowSize } from '@uidotdev/usehooks';
 
 const styles = {
   '--swiper-navigation-color': 'white',
@@ -19,12 +19,13 @@ const styles = {
 };
 
 const ImageSlider = ({ slides }) => {
-  const size = useWindowSize();
+  // const size = useWindowSize();
   return (
     <div>
       <Swiper
         dir='ltr'
-        navigation={size.width > 760 ? true : false}
+        // navigation={size.width > 760 ? true : false}
+        navigation={true}
         pagination={{
           clickable: true,
         }}
