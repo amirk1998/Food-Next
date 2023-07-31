@@ -73,7 +73,7 @@ export default function Home() {
         <span className='absolute top-16 z-10 w-full select-none text-center text-base leading-normal text-white md:top-[128px] md:text-[40px]'>
           تجربه غذای سالم و گیاهی به سبک ترخینه
         </span>
-        <div className='z-10 flex items-center justify-center'>
+        <div className='flex items-center justify-center'>
           <button className='btn absolute bottom-8 z-10 text-[10px] md:bottom-24 md:text-base'>
             سفارش آنلاین غذا
           </button>
@@ -85,9 +85,13 @@ export default function Home() {
       <h1 className='mb-3 mt-6 text-center text-base font-bold leading-snug lg:text-2xl'>
         منوی رستوران
       </h1>
-      <div className='container grid w-full grid-cols-2 grid-rows-2 gap-4 px-5 lg:px-12 xl:grid-cols-4 xl:grid-rows-1'>
+      <div className='container grid w-full max-w-sm grid-cols-2 grid-rows-2 gap-4 px-5 md:max-w-2xl lg:max-w-4xl lg:px-12 xl:max-w-screen-2xl xl:grid-cols-4 xl:grid-rows-1 '>
         {foodItems.map((item, index) => {
-          return <FoodComponent item={item} key={item.id} />;
+          return (
+            <div className='flex items-center justify-center' key={item.id}>
+              <FoodComponent item={item} />;
+            </div>
+          );
         })}
       </div>
       <div className='relative mt-6 flex h-[340px] w-full lg:h-[390px]'>
