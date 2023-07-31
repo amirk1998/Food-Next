@@ -24,7 +24,7 @@ const NavBar = () => {
           <ProfileDropDown />
         </div>
         <div
-          className={`fixed right-0 top-0 z-10 h-full w-64 bg-white
+          className={`fixed right-0 top-0 z-30 h-full w-64 bg-white
         ${
           isSidebarOpen ? 'translate-x-0' : 'translate-x-full'
         } transition-transform`}

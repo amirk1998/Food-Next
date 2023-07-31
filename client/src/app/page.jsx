@@ -3,8 +3,12 @@
 import SearchField from '@/common/SearchField';
 import FoodComponent from '@/components/FoodComponent';
 import ImageSlider from '@/components/ImageSlider';
+import DiagramIcon from '@/public/icons/DigramIcon';
+import HomeWiFi from '@/public/icons/HomeWiFi';
+import MenuBoardIcon from '@/public/icons/MenuBoard';
 import UserOutline from '@/public/icons/UserOutline';
 import Image from 'next/image';
+// import UserOutline from '@/icons/UserOutline.svg';
 
 const slides = [
   {
@@ -69,8 +73,8 @@ export default function Home() {
         <span className='absolute top-16 z-10 w-full select-none text-center text-base leading-normal text-white md:top-[128px] md:text-[40px]'>
           تجربه غذای سالم و گیاهی به سبک ترخینه
         </span>
-        <div className='z-20 flex items-center justify-center'>
-          <button className='btn absolute bottom-8 z-30 text-[10px] md:bottom-24 md:text-base'>
+        <div className='z-10 flex items-center justify-center'>
+          <button className='btn absolute bottom-8 z-10 text-[10px] md:bottom-24 md:text-base'>
             سفارش آنلاین غذا
           </button>
         </div>
@@ -78,7 +82,7 @@ export default function Home() {
       <div className='mt-4 w-full px-5'>
         <SearchField />
       </div>
-      <h1 className='mb-3 mt-6 text-center text-base font-bold leading-snug'>
+      <h1 className='mb-3 mt-6 text-center text-base font-bold leading-snug lg:text-2xl'>
         منوی رستوران
       </h1>
       <div className='container grid w-full grid-cols-2 grid-rows-2 gap-4 px-5 lg:px-12 xl:grid-cols-4 xl:grid-rows-1'>
@@ -99,28 +103,56 @@ export default function Home() {
             }}
           />
         </div>
-        <div className='z-10 flex flex-col px-5 py-4 text-white lg:flex-row lg:justify-between'>
-          <h1 className='mb-2 text-base font-bold leading-7 md:mb-4 md:text-lg lg:mb-6 lg:text-2xl'>
-            رستوران‌های زنجیره‌ای ترخینه
-          </h1>
-          <div className='mb-2 w-80 text-justify text-[10px] font-normal capitalize leading-[18px] text-white md:w-96 md:text-base lg:w-[600px] lg:max-w-[600px] lg:text-xl'>
-            مهمان‌نوازی یکی از مهم‌ترین مشخصه‌های ایرانیان است و باعث افتخار
-            ماست که بیش از 20 سال است خدمت‌گزار مردم شریف ایران هستیم. ما در
-            رستوران‌های زنجیره‌ای ترخینه همواره تلاش کردیم که در محیطی اصیل بر
-            پایه معماری و طراحی مدرن در کنار طبیعتی دلنواز، غذایی سالم و درخور
-            شان شما عزیزان ارائه دهیم.
+        {/* Text */}
+        <div className='z-10 flex flex-col gap-y-6 px-5 py-4 text-white lg:flex-row lg:justify-between lg:gap-x-[232px] lg:gap-y-0 lg:px-[108px] lg:py-0'>
+          <div className='flex flex-1 flex-col lg:py-12'>
+            <h1 className='mb-2 text-base font-bold leading-7 md:mb-4 md:text-lg lg:mb-6 lg:text-2xl'>
+              رستوران‌های زنجیره‌ای ترخینه
+            </h1>
+            <div className='mb-2 w-80 text-justify text-[10px] font-normal capitalize leading-[18px] text-white md:w-96 md:text-base lg:w-[600px] lg:max-w-[600px] lg:text-xl'>
+              مهمان‌نوازی یکی از مهم‌ترین مشخصه‌های ایرانیان است و باعث افتخار
+              ماست که بیش از 20 سال است خدمت‌گزار مردم شریف ایران هستیم. ما در
+              رستوران‌های زنجیره‌ای ترخینه همواره تلاش کردیم که در محیطی اصیل بر
+              پایه معماری و طراحی مدرن در کنار طبیعتی دلنواز، غذایی سالم و درخور
+              شان شما عزیزان ارائه دهیم.
+            </div>
+            <div className='mb-6 flex items-center justify-between'>
+              <div className='flex-1'></div>
+              <button className='inline-flex h-8 w-[152px] items-center justify-center rounded border border-white p-2 text-white'>
+                اطلاعات بیشتر
+              </button>
+            </div>
           </div>
-          <div className='mb-6 flex items-center justify-between'>
-            <div className='flex-1'></div>
-            <button className='inline-flex h-8 w-[152px] items-center justify-center rounded border border-white p-2 text-white'>
-              اطلاعات بیشتر
-            </button>
-          </div>
-          <div className='grid grid-cols-2 grid-rows-2'>
-            <div className='flex w-[117px] flex-col items-center gap-y-1 lg:w-[184px]'>
+          <div className='grid flex-1 grid-cols-2 grid-rows-2 lg:gap-x-6 lg:gap-y-2 lg:py-14'>
+            {/* Icon #1 */}
+            <div className='flex w-[117px] flex-col items-center gap-y-1 lg:w-[184px] lg:gap-y-4'>
               <UserOutline />
-              <span className='text-xs font-normal leading-snug text-white'>
+              <span className='text-xs font-normal leading-snug text-white lg:text-lg'>
                 پرسنلی مجرب و حرفه‌ای
+              </span>
+            </div>
+
+            {/* Icon #2 */}
+            <div className='flex w-[117px] flex-col items-center gap-y-1 lg:w-[184px] lg:gap-y-4'>
+              <DiagramIcon />
+              <span className='text-xs font-normal leading-snug text-white lg:text-lg'>
+                کیفیت بالای غذاها
+              </span>
+            </div>
+
+            {/* Icon #3 */}
+            <div className='flex w-[117px] flex-col items-center gap-y-1 lg:w-[184px] lg:gap-y-4'>
+              <HomeWiFi />
+              <span className='text-xs font-normal leading-snug text-white lg:text-lg'>
+                محیطی دلنشین و آرام
+              </span>
+            </div>
+
+            {/* Icon #4 */}
+            <div className='flex w-[117px] flex-col items-center gap-y-1 lg:w-[184px] lg:gap-y-4'>
+              <MenuBoardIcon />
+              <span className='text-xs font-normal leading-snug text-white lg:text-lg'>
+                منوی متنوع
               </span>
             </div>
           </div>

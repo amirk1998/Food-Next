@@ -17,7 +17,7 @@ const SidebarMenu = ({ setIsSidebarOpen }) => {
 
   return (
     <div>
-      <div className='z-10 h-full overflow-y-auto bg-white pb-4'>
+      <div className='z-30 h-full overflow-y-auto bg-white pb-4'>
         {/* Image */}
         <div className='relative mb-2'>
           <Image

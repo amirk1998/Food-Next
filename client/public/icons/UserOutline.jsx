@@ -2,7 +2,7 @@ const UserOutline = () => {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
-      className='h-6 w-6 stroke-white md:h-8 md:w-8 lg:h-12 lg:w-12'
+      className='h-6 w-6 md:h-8 md:w-8 lg:h-12 lg:w-12 '
       viewBox='0 0 24 24'
       fill='currentColor'
     >
