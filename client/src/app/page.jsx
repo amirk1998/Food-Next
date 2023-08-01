@@ -1,6 +1,7 @@
 'use client';
 
 import SearchField from '@/common/SearchField';
+import BranchSelection from '@/components/BranchSelection';
 import FoodComponent from '@/components/FoodComponent';
 import ImageSlider from '@/components/ImageSlider';
 import DiagramIcon from '@/public/icons/DigramIcon';
@@ -64,6 +65,38 @@ const foodItems = [
   },
 ];
 
+const branchData = [
+  {
+    id: 1,
+    src: '/images/Branches/branch(1).png',
+    alt: 'شعبه اکباتان',
+    title: 'شعبه اکباتان',
+    description: 'شهرک اکباتان، فاز ۳، مجتمع تجاری کوروش، طبقه سوم',
+  },
+  {
+    id: 2,
+    src: '/images/Branches/branch(2).png',
+    alt: 'شعبه چالوس',
+    title: 'شعبه چالوس',
+    description:
+      'چالوس، خیابان ۱۷ شهریور، بعد کوچه کوروش، جنب داروخانه دکتر میلانی',
+  },
+  {
+    id: 3,
+    src: '/images/Branches/branch(3).png',
+    alt: 'شعبه اقدسیه',
+    title: 'شعبه اقدسیه',
+    description: 'خیابان اقدسیه ، نرسیده به میدان خیام، پلاک ۸',
+  },
+  {
+    id: 4,
+    src: '/images/Branches/branch(4).png',
+    alt: 'شعبه ونک',
+    title: 'شعبه ونک',
+    description: 'میدان ونک، خیابان فردوسی، نبش کوچه نیلوفر، پلاک ۲۶',
+  },
+];
+
 export default function Home() {
   return (
     <main className='flex w-full flex-col'>
@@ -89,7 +122,7 @@ export default function Home() {
         {foodItems.map((item, index) => {
           return (
             <div className='flex items-center justify-center' key={item.id}>
-              <FoodComponent item={item} />;
+              <FoodComponent item={item} />
             </div>
           );
         })}
@@ -161,6 +194,16 @@ export default function Home() {
               </span>
             </div>
           </div>
+        </div>
+      </div>
+      <div className='mt-6 flex flex-col items-center gap-y-3 px-5'>
+        <h1 className='mb-2 text-base font-bold leading-7 md:text-lg lg:text-2xl'>
+          ترخینه گردی
+        </h1>
+        <div className='flex flex-col items-center gap-y-3'>
+          {branchData.map((branch) => {
+            return <BranchSelection branchData={branch} />;
+          })}
         </div>
       </div>
     </main>

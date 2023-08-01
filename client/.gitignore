@@ -41,3 +41,4 @@ next-env.d.ts
 
 #Test Folder
 public/TEST/*
+public/images/Test/*
