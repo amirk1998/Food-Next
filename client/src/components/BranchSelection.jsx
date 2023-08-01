@@ -7,9 +7,8 @@ const BranchSelection = ({ branchData }) => {
         <Image
           src={branchData.src}
           alt={branchData.alt}
-          // width={144}
-          // height={80}
-          sizes='100vw'
+          sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
+          // layout='fill' // Fill parent
           fill
           style={{
             objectFit: 'cover',
