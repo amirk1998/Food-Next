@@ -200,9 +200,9 @@ export default function Home() {
         <h1 className='mb-2 text-base font-bold leading-7 md:text-lg lg:text-2xl'>
           ترخینه گردی
         </h1>
-        <div className='flex flex-1 flex-col items-center gap-y-3'>
+        <div className='flex flex-col items-center gap-y-3 md:mb-12 md:flex-row md:gap-x-6'>
           {branchData.map((branch) => {
-            return <BranchSelection branchData={branch} key={branch.id} />;
+            return <BranchSelection branch={branch} key={branch.id} />;
           })}
         </div>
       </div>
