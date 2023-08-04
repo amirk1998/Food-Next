@@ -54,6 +54,10 @@
     @apply focus:shadow-input-focus w-full rounded-xl border border-gray-100 bg-gray-100 px-4 py-3 text-secondary-900 outline-none transition-all duration-200 ease-in-out hover:border-primary-300 focus:border-primary-300 focus:bg-white focus:outline-none;
   } */
 
+  /* .footer__input {
+    @apply max-w-[276px] rounded-xl border border-secondary-100 bg-secondary-700 px-4 py-2 placeholder-secondary-100;
+  } */
+
   .btn {
     @apply rounded bg-primary-800 p-2 text-center text-white transition-all duration-300 hover:bg-shade-200 focus:bg-shade-300 md:rounded-lg md:px-4 md:py-2;
   }

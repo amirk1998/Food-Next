@@ -6,6 +6,7 @@ import { darkTheme, lightTheme } from './theme';
 import { ThemeProvider, CssBaseline } from '@mui/material';
 import { ChangeEvent, useState } from 'react';
 import NavBar from './NavBar';
+import Footer from './Footer';
 
 export default function RootLayout({ children }) {
   let [useDarkTheme, setUseDarkTheme] = useState(false);
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
           <CssBaseline />
           <NavBar />
           {children}
+          <Footer />
         </body>
       </ThemeProvider>
     </html>

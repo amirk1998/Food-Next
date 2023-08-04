@@ -164,7 +164,9 @@ export default function Home() {
           <div className='grid flex-1 grid-cols-2 grid-rows-2 lg:gap-x-6 lg:gap-y-2 lg:py-14'>
             {/* Icon #1 */}
             <div className='flex w-[117px] flex-col items-center gap-y-1 lg:w-[184px] lg:gap-y-4'>
-              <UserOutline />
+              <div className='lg:scale-[2]'>
+                <UserOutline />
+              </div>
               <span className='text-xs font-normal leading-snug text-white lg:text-lg'>
                 پرسنلی مجرب و حرفه‌ای
               </span>
@@ -172,7 +174,9 @@ export default function Home() {
 
             {/* Icon #2 */}
             <div className='flex w-[117px] flex-col items-center gap-y-1 lg:w-[184px] lg:gap-y-4'>
-              <DiagramIcon />
+              <div className='lg:scale-[2]'>
+                <DiagramIcon />
+              </div>
               <span className='text-xs font-normal leading-snug text-white lg:text-lg'>
                 کیفیت بالای غذاها
               </span>
@@ -180,7 +184,9 @@ export default function Home() {
 
             {/* Icon #3 */}
             <div className='flex w-[117px] flex-col items-center gap-y-1 lg:w-[184px] lg:gap-y-4'>
-              <HomeWiFi />
+              <div className='lg:scale-[2]'>
+                <HomeWiFi />
+              </div>
               <span className='text-xs font-normal leading-snug text-white lg:text-lg'>
                 محیطی دلنشین و آرام
               </span>
@@ -188,7 +194,9 @@ export default function Home() {
 
             {/* Icon #4 */}
             <div className='flex w-[117px] flex-col items-center gap-y-1 lg:w-[184px] lg:gap-y-4'>
-              <MenuBoardIcon />
+              <div className='lg:scale-[2]'>
+                <MenuBoardIcon />
+              </div>
               <span className='text-xs font-normal leading-snug text-white lg:text-lg'>
                 منوی متنوع
               </span>
@@ -200,7 +208,7 @@ export default function Home() {
         <h1 className='mb-2 text-base font-bold leading-7 md:text-lg lg:text-2xl'>
           ترخینه گردی
         </h1>
-        <div className='flex flex-col items-center gap-y-3 md:mb-12 md:flex-row md:gap-x-6'>
+        <div className='mb-6 flex flex-col items-center gap-y-3 md:mb-12 md:flex-row md:gap-x-6'>
           {branchData.map((branch) => {
             return <BranchSelection branch={branch} key={branch.id} />;
           })}
