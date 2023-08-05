@@ -156,17 +156,16 @@ const Footer = () => {
                   type='email'
                 />
               </div>
-              <div>
-                <textarea
-                  name='message'
-                  id='message'
-                  placeholder='پیام شما'
-                  dir='rtl'
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
-                  className='h-40 w-72 resize-none rounded-xl border-[1.4px] border-white bg-transparent pr-4 pt-4 text-white ring-0 focus:ring-0'
-                ></textarea>
-              </div>
+
+              <textarea
+                name='message'
+                id='message'
+                placeholder='پیام شما'
+                dir='rtl'
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                className='h-40 w-72 resize-none rounded-xl border-[1.4px] border-secondary-100 bg-transparent py-4 pr-4 text-white ring-0 focus:ring-0'
+              ></textarea>
             </div>
             <div className='mt-6 flex items-center'>
               <div className='flex-1'></div>
