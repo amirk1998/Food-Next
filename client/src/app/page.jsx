@@ -2,6 +2,7 @@
 
 import SearchField from '@/common/SearchField';
 import BranchSelection from '@/components/BranchSelection';
+import CustomSlider from '@/components/CustomSlider';
 import HomeCategory from '@/components/HomeCategory';
 import ImageSlider from '@/components/ImageSlider';
 import DiagramIcon from '@/public/icons/DigramIcon';
@@ -100,8 +101,7 @@ const branchData = [
 export default function Home() {
   return (
     <main className='flex w-full flex-col'>
-      {/* <h1 className='text-4xl font-bold'>Home Page</h1> */}
-      <div className='relative'>
+      {/* <div className='relative'>
         <ImageSlider slides={slides} />
         <span className='absolute top-16 z-10 w-full select-none text-center text-base leading-normal text-white md:top-[128px] md:text-[40px]'>
           تجربه غذای سالم و گیاهی به سبک ترخینه
@@ -111,7 +111,11 @@ export default function Home() {
             سفارش آنلاین غذا
           </button>
         </div>
-      </div>
+      </div> */}
+      <CustomSlider
+        text={'تجربه غذای سالم و گیاهی به سبک ترخینه'}
+        isShowButton={true}
+      />
       <div className='mt-4 w-full px-5'>
         <SearchField />
       </div>
