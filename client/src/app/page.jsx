@@ -101,17 +101,6 @@ const branchData = [
 export default function Home() {
   return (
     <main className='flex w-full flex-col'>
-      {/* <div className='relative'>
-        <ImageSlider slides={slides} />
-        <span className='absolute top-16 z-10 w-full select-none text-center text-base leading-normal text-white md:top-[128px] md:text-[40px]'>
-          تجربه غذای سالم و گیاهی به سبک ترخینه
-        </span>
-        <div className='flex items-center justify-center'>
-          <button className='btn absolute bottom-8 z-10 text-[10px] md:bottom-24 md:text-base'>
-            سفارش آنلاین غذا
-          </button>
-        </div>
-      </div> */}
       <CustomSlider
         text={'تجربه غذای سالم و گیاهی به سبک ترخینه'}
         isShowButton={true}
