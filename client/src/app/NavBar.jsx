@@ -29,10 +29,12 @@ const NavBar = () => {
 
           <TitleText />
           <div className='flex items-center gap-x-1'>
-            <button className='flex h-6 w-6 items-center justify-center rounded bg-primary-100 p-2 text-primary-800'>
+            <button className='z-20 flex h-6 w-6 items-center justify-center rounded bg-primary-100 stroke-primary-800 p-2 text-primary-800'>
               <CartIcon />
             </button>
-            <ProfileDropDown />
+            <div className='z-20 flex h-6 w-6 items-center justify-center rounded bg-primary-100 stroke-primary-800 p-2 text-primary-800'>
+              <ProfileDropDown />
+            </div>
           </div>
           <div
             className={`fixed right-0 top-0 z-30 h-full w-64 bg-white

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-const FoodComponent = ({ item }) => {
+const HomeCategory = ({ item }) => {
   return (
     <div className='relative h-[147px] w-[152px] md:h-[324px] md:w-72'>
       <div className='absolute inset-x-6 top-0 z-10 h-[100px] w-[102px] md:inset-x-8 md:h-[240px] md:w-[240px]'>
@@ -23,4 +23,4 @@ const FoodComponent = ({ item }) => {
   );
 };
 
-export default FoodComponent;
+export default HomeCategory;

@@ -2,7 +2,7 @@
 
 import SearchField from '@/common/SearchField';
 import BranchSelection from '@/components/BranchSelection';
-import FoodComponent from '@/components/FoodComponent';
+import HomeCategory from '@/components/HomeCategory';
 import ImageSlider from '@/components/ImageSlider';
 import DiagramIcon from '@/public/icons/DigramIcon';
 import HomeWiFi from '@/public/icons/HomeWiFi';
@@ -122,7 +122,7 @@ export default function Home() {
         {foodItems.map((item, index) => {
           return (
             <div className='flex items-center justify-center' key={item.id}>
-              <FoodComponent item={item} />
+              <HomeCategory item={item} />
             </div>
           );
         })}
@@ -161,7 +161,7 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className='grid flex-1 grid-cols-2 grid-rows-2 lg:gap-x-6 lg:gap-y-2 lg:py-14'>
+          <div className='mt-4   grid flex-1 grid-cols-2 grid-rows-2 lg:gap-x-6 lg:gap-y-2 lg:py-14'>
             {/* Icon #1 */}
             <div className='flex w-[117px] flex-col items-center gap-y-1 lg:w-[184px] lg:gap-y-4'>
               <div className='lg:scale-[2]'>
