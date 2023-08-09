@@ -3,6 +3,8 @@ import {
   toPersianNumbersWithComma,
 } from '@/utils/toPersianNumbers';
 import Image from 'next/image';
+import LikeProduct from './LikeProduct';
+import StarRating from './StarRating';
 
 const FoodComponent = ({ product }) => {
   return (
@@ -51,9 +53,18 @@ const FoodComponent = ({ product }) => {
             </span>
           </div>
         </div>
-        {/* <div className='flex items-center gap-x-2'>
-          <p>HEART</p>
-        </div> */}
+        <div className='flex items-center gap-x-2'>
+          <div className='flex flex-1 items-center gap-x-2'>
+            <LikeProduct />
+            <StarRating />
+          </div>
+          <button
+            type='button'
+            className='h-8 whitespace-nowrap rounded-md border-0 bg-primary-800 p-2 text-[10px] font-normal leading-[18px] text-white'
+          >
+            افزودن به سبد خرید
+          </button>
+        </div>
       </div>
     </div>
   );
