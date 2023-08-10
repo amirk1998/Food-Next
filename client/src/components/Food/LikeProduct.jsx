@@ -14,9 +14,9 @@ const LikeProduct = () => {
     <div className='flex items-center'>
       <button onClick={handlerLike}>
         {isLiked ? (
-          <HiOutlineHeart className='h-4 w-4 fill-errorLight text-center text-errorLight ' />
+          <HiOutlineHeart className='h-4 w-4 fill-errorLight text-center text-errorLight lg:h-6 lg:w-6 ' />
         ) : (
-          <HiOutlineHeart className='h-4 w-4 text-center text-secondary-700 ' />
+          <HiOutlineHeart className='h-4 w-4 text-center text-secondary-700 lg:h-6 lg:w-6 ' />
         )}
       </button>
     </div>
