@@ -16,7 +16,7 @@ const SearchField = ({ className }) => {
       </div>
       <input
         type='text'
-        className='block h-8 w-full rounded border border-secondary-400 px-4 py-2 text-secondary-800 placeholder-secondary-800 outline-none transition-all duration-200 ease-in-out focus:border focus:border-primary-800 focus:outline-none'
+        className='block h-8 w-full rounded border border-secondary-400 px-4 py-2 text-secondary-800 placeholder-secondary-800 outline-none transition-all duration-200 ease-in-out focus:border focus:border-primary-800 focus:outline-none lg:h-10 lg:rounded-lg'
         placeholder='جستجو'
       />
     </div>

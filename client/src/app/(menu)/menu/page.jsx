@@ -57,10 +57,10 @@ const MenuPage = () => {
           </Link>
         </li>
       </ul>
-      <div className='py-2 lg:flex lg:flex-row lg:px-28'>
+      <div className='py-2 lg:flex lg:flex-row lg:justify-between lg:px-28'>
         {/* Category : Modify Later ! */}
         <ul
-          className='no-scrollbar flex w-full items-center gap-x-2 overflow-x-auto pr-5 lg:ml-4 lg:max-w-[680px]'
+          className='no-scrollbar flex w-full items-center gap-x-2 overflow-x-auto pr-5 lg:ml-4 lg:max-w-[680px] lg:px-0 xl:max-w-[750px]'
           dir='rtl'
         >
           {categoryData.map((category) => {
@@ -75,8 +75,8 @@ const MenuPage = () => {
           })}
         </ul>
         {/* Search Field */}
-        <div className='mt-3 w-full px-5 lg:mt-0 lg:flex-1 lg:pl-0'>
-          <SearchField className='lg:block' />
+        <div className='mt-3 w-full px-5 lg:mt-0 lg:max-w-lg lg:flex-1 lg:pl-0'>
+          <SearchField className='lg:h-10' />
         </div>
       </div>
       {/* Food Component : Customize */}
