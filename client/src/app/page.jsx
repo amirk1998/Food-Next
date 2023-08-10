@@ -4,7 +4,6 @@ import SearchField from '@/common/SearchField';
 import BranchSelection from '@/components/BranchSelection';
 import CustomSlider from '@/components/Slider/CustomSlider';
 import HomeCategory from '@/components/HomeCategory';
-import ImageSlider from '@/components/Slider/ImageSlider';
 import DiagramIcon from '@/public/icons/DigramIcon';
 import HomeWiFi from '@/public/icons/HomeWiFi';
 import MenuBoardIcon from '@/public/icons/MenuBoard';
@@ -106,7 +105,7 @@ export default function Home() {
         isShowButton={true}
       />
       <div className='mt-4 w-full px-5'>
-        <SearchField />
+        <SearchField className={'md:hidden'} />
       </div>
       <h1 className='mb-3 mt-6 text-center text-base font-bold leading-snug lg:text-2xl'>
         منوی رستوران

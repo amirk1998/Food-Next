@@ -1,7 +1,7 @@
-const SearchField = () => {
+const SearchField = ({ className }) => {
   return (
-    <div className='relative w-full md:hidden'>
-      <div className='pointer-events-none absolute inset-y-0 left-0 flex items-center pl-2 md:hidden'>
+    <div className={`relative w-full ${className}`}>
+      <div className='pointer-events-none absolute inset-y-0 left-0 flex items-center pl-2'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           className='h-4 w-4'
@@ -16,7 +16,7 @@ const SearchField = () => {
       </div>
       <input
         type='text'
-        className='block h-8 w-full rounded border border-secondary-400 px-4 py-2 text-secondary-800 placeholder-secondary-800 outline-none transition-all duration-200 ease-in-out focus:border focus:border-primary-800 focus:outline-none md:hidden'
+        className='block h-8 w-full rounded border border-secondary-400 px-4 py-2 text-secondary-800 placeholder-secondary-800 outline-none transition-all duration-200 ease-in-out focus:border focus:border-primary-800 focus:outline-none'
         placeholder='جستجو'
       />
     </div>

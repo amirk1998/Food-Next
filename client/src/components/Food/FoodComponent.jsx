@@ -2,7 +2,7 @@ import FoodDetails from './FoodDetails';
 
 const FoodComponent = ({ ProductsData, categoryTitle, isShowBtn = false }) => {
   return (
-    <div className='mb-6 px-5'>
+    <div className='mb-3 px-5 lg:px-28'>
       <div className='mb-3 flex items-center'>
         <div className='mt-6 flex-1'>
           <h2 className='text-base font-bold leading-snug text-secondary-800'>
