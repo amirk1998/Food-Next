@@ -6,7 +6,7 @@ import Image from 'next/image';
 import LikeProduct from './LikeProduct';
 import StarRating from './StarRating';
 
-const FoodComponent = ({ product }) => {
+const FoodDetails = ({ product }) => {
   return (
     <div className='flex h-[100px] w-full items-center gap-x-2 rounded border-2 border-secondary-400 pl-2'>
       {/*Product Image */}
@@ -70,4 +70,4 @@ const FoodComponent = ({ product }) => {
   );
 };
 
-export default FoodComponent;
+export default FoodDetails;

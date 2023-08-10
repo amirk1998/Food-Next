@@ -2,9 +2,9 @@
 
 import SearchField from '@/common/SearchField';
 import BranchSelection from '@/components/BranchSelection';
-import CustomSlider from '@/components/CustomSlider';
+import CustomSlider from '@/components/Slider/CustomSlider';
 import HomeCategory from '@/components/HomeCategory';
-import ImageSlider from '@/components/ImageSlider';
+import ImageSlider from '@/components/Slider/ImageSlider';
 import DiagramIcon from '@/public/icons/DigramIcon';
 import HomeWiFi from '@/public/icons/HomeWiFi';
 import MenuBoardIcon from '@/public/icons/MenuBoard';

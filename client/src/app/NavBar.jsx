@@ -9,8 +9,8 @@ import SidebarMenu from './Sidebar';
 import SearchIcon from '@/public/icons/SearchIcon';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import BranchNavbar from '@/components/BranchNavbar';
-import MenuNavbar from '@/components/MenuNavbar';
+import BranchNavbar from '@/components/Navbar/BranchNavbar';
+import MenuNavbar from '@/components/Navbar/MenuNavbar';
 
 const NavBar = () => {
   const pathname = usePathname();
