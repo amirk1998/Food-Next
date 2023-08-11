@@ -59,7 +59,10 @@
   } */
 
   .btn {
-    @apply rounded bg-primary-800 p-2 text-center text-white transition-all duration-300 hover:bg-shade-200 focus:bg-shade-300 md:rounded-lg md:px-4 md:py-2;
+    @apply rounded bg-primary-800 p-2 text-center text-white transition-all duration-300 hover:bg-shade-200 focus:bg-shade-300 md:rounded-lg md:px-4 md:py-2 lg:h-10;
+  }
+  .btn--loading {
+    @apply cursor-wait bg-primary-800 px-4 py-3 text-white shadow-lg shadow-shade-400;
   }
 
   .searchField__input {
