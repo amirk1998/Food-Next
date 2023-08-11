@@ -23,7 +23,8 @@ const MenuPage = () => {
   return (
     <div className='flex w-full flex-col'>
       <CustomSlider text={'لذت غذای سالم و گیاهی را با ترخینه تجربه کنید!'} />
-      <ul className='mb-2 flex h-16 w-full items-center gap-x-4 bg-secondary-300 py-2 pr-5 md:gap-x-6 lg:gap-x-8'>
+
+      <ul className='mb-2 flex h-16 w-full items-center gap-x-4 bg-secondary-300 py-2 pr-5 md:gap-x-6 lg:gap-x-8 xl:pr-80'>
         <li className='block'>
           <Link
             href={'#'}
@@ -57,10 +58,11 @@ const MenuPage = () => {
           </Link>
         </li>
       </ul>
-      <div className='py-2 lg:flex lg:flex-row lg:justify-between lg:px-28'>
+
+      <div className='container py-2 lg:flex lg:flex-row lg:justify-between lg:px-28 xl:max-w-screen-xl'>
         {/* Category : Modify Later ! */}
         <ul
-          className='no-scrollbar flex w-full items-center gap-x-2 overflow-x-auto pr-5 lg:ml-4 lg:max-w-[680px] lg:px-0 xl:max-w-[750px]'
+          className='no-scrollbar flex w-full items-center gap-x-2 overflow-x-auto pr-5 lg:ml-4 lg:max-w-[680px] lg:px-0'
           dir='rtl'
         >
           {categoryData.map((category) => {
