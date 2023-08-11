@@ -6,6 +6,7 @@ import { useMutation } from '@tanstack/react-query';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { toast } from 'react-hot-toast';
+import AuthLogo from '../auth/AuthLogo';
 
 const CompleteProfilePage = () => {
   const [name, setName] = useState('');
@@ -28,34 +29,38 @@ const CompleteProfilePage = () => {
   };
 
   return (
-    <div className='flex justify-center'>
-      <div className='w-full sm:max-w-sm'>
-        <form className='space-y-10' onSubmit={handlerSubmit}>
-          <h2 className='text-center text-2xl font-bold'>
-            تکمیل اطلاعات پروفایل
-          </h2>
-          <TextField
-            label='نام و نام خانوادگی'
-            name='name'
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-          <TextField
-            label='ایمیل'
-            name='email'
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            dir='ltr'
-          />
-          {isLoading ? (
-            <LoadingButton isWidthFull={true} />
-          ) : (
-            <button type='submit' className='btn btn--primary w-full'>
-              تایید
-            </button>
-          )}
-        </form>
+    <div className='container flex max-w-sm flex-col items-center justify-center p-6'>
+      <div className='mb-4'>
+        <AuthLogo />
       </div>
+      <form
+        className='flex w-full flex-col items-center justify-center space-y-6'
+        onSubmit={handlerSubmit}
+      >
+        <h2 className='mb-2 h-8 text-lg font-semibold leading-7 text-secondary-800'>
+          تکمیل اطلاعات پروفایل
+        </h2>
+        <TextField
+          label='نام و نام خانوادگی'
+          name='name'
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+        <TextField
+          label='ایمیل'
+          name='email'
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          dir='ltr'
+        />
+        {isLoading ? (
+          <LoadingButton isWidthFull={true} />
+        ) : (
+          <button type='submit' className='btn btn--primary w-full'>
+            تایید
+          </button>
+        )}
+      </form>
     </div>
   );
 };

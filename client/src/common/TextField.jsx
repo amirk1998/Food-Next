@@ -1,6 +1,6 @@
 const TextField = ({ label, name, value, onChange, dir = 'rtl' }) => {
   return (
-    <div>
+    <div className='flex w-full items-center justify-center'>
       {/* <label htmlFor={name} className='mb-4 block'>
         {label}
       </label> */}
