@@ -3,8 +3,9 @@
 import estedadFont from '@/constants/localFonts';
 import './globals.css';
 
-import NavBar from './NavBar';
+import NavBar from './Header';
 import Footer from './Footer';
+import Providers from './Providers';
 
 export default function RootLayout({ children }) {
   return (
@@ -16,9 +17,11 @@ export default function RootLayout({ children }) {
         <link rel='icon' href='/favicon.ico' />
       </head>
       <body id='__next' className={`${estedadFont.variable} font-sans`}>
-        <NavBar />
-        {children}
-        <Footer />
+        <Providers>
+          <NavBar />
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

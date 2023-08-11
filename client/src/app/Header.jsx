@@ -5,7 +5,7 @@ import ProfileDropDown from '@/components/Profile';
 import TitleText from '@/public/icons/TitleText';
 import CartIcon from '@/public/icons/CartIcon';
 import { useState } from 'react';
-import SidebarMenu from './Sidebar';
+import SidebarMenu from '../components/Navbar/Sidebar';
 import SearchIcon from '@/public/icons/SearchIcon';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
