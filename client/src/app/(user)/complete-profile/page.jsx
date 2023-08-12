@@ -29,8 +29,8 @@ const CompleteProfilePage = () => {
   };
 
   return (
-    <div className='container flex max-w-sm flex-col items-center justify-center p-6'>
-      <div className='mb-4'>
+    <div className='container flex h-[70vh] max-w-sm flex-col items-center justify-center p-6 lg:h-auto'>
+      <div className='hidden lg:mb-4 lg:mt-0 lg:block'>
         <AuthLogo />
       </div>
       <form

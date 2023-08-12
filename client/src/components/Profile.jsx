@@ -5,10 +5,11 @@ import LocationIcon from '@/public/icons/LocationIcon';
 import LogoutIcon from '@/public/icons/LogoutIcon';
 import ProfileIcon from '@/public/icons/Profile';
 import ProfileItem from '@/public/icons/ProfileItem';
+import ShieldIcon from '@/public/icons/ShieldIcon';
 import WalletIcon from '@/public/icons/WalletIcon';
 import { Dropdown } from 'flowbite-react';
 
-const ProfileDropDown = ({ isMobile = true }) => {
+const ProfileDropDown = ({ isMobile = true, user }) => {
   return (
     <Dropdown
       dir='rtl'
@@ -17,6 +18,17 @@ const ProfileDropDown = ({ isMobile = true }) => {
       arrowIcon={null}
       className='z-20'
     >
+      {user && user.role === 'ADMIN' && (
+        <div>
+          <Dropdown.Item
+            className='flex items-center gap-x-1 stroke-primary-800 px-2 text-sm text-primary-800'
+            icon={ShieldIcon}
+          >
+            پنل ادمین
+          </Dropdown.Item>
+          <Dropdown.Divider />
+        </div>
+      )}
       <Dropdown.Item
         className='flex items-center gap-x-1 stroke-secondary-800 px-2 text-sm'
         icon={ProfileItem}
@@ -46,7 +58,7 @@ const ProfileDropDown = ({ isMobile = true }) => {
       </Dropdown.Item>
       <Dropdown.Divider />
       <Dropdown.Item
-        className='flex items-center gap-x-1 stroke-secondary-800 px-2 text-sm'
+        className='flex items-center gap-x-1 stroke-errorLight px-2 text-sm text-errorLight'
         icon={LogoutIcon}
       >
         خروج از حساب

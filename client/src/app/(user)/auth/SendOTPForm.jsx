@@ -1,12 +1,11 @@
 import LoadingButton from '@/common/LoadingButton';
 import TextField from '@/common/TextField';
 import AuthLogo from './AuthLogo';
-import Link from 'next/link';
 
 const SendOTPForm = ({ phoneNumber, onChange, onSubmit, isLoading }) => {
   return (
-    <div className='flex h-[50vh] w-full max-w-screen-sm flex-col items-center justify-center p-6'>
-      <div className='mb-4'>
+    <div className='flex h-[70vh] w-full max-w-screen-sm flex-col items-center justify-center p-6 lg:h-[50vh]'>
+      <div className='hidden lg:mb-4 lg:mt-0 lg:block'>
         <AuthLogo />
       </div>
       <h1 className='mb-2 h-8 text-lg font-semibold leading-7 text-secondary-800'>
