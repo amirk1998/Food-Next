@@ -11,7 +11,7 @@ const FoodComponent = ({ ProductsData, categoryTitle, isShowBtn = false }) => {
             </h2>
           </div>
           {isShowBtn && (
-            <button className='hover:text mt-3 flex h-8 items-center gap-x-1 rounded-md border-2 border-primary-800 p-2 text-primary-800 hover:border-shade-200 hover:text-shade-200 focus:border-shade-300 focus:text-shade-300 lg:h-10 lg:w-36 lg:px-4 lg:py-2'>
+            <button className='mt-3 flex h-8 items-center gap-x-1 rounded-md border-2 border-primary-800 p-2 text-primary-800 hover:border-shade-200 hover:text-shade-200 focus:border-shade-300 focus:text-shade-300 lg:h-10 lg:w-36 lg:px-4 lg:py-2'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 className='h-4 w-4 lg:h-6 lg:w-6'
