@@ -13,7 +13,7 @@ import BranchNavbar from '@/components/Navbar/BranchNavbar';
 import MenuNavbar from '@/components/Navbar/MenuNavbar';
 import { useGetUser } from '@/hooks/useAuth';
 
-const Header = () => {
+const Header = ({ className }) => {
   const { data, error, isLoading } = useGetUser();
   const { user, cart } = data || {};
 
@@ -23,7 +23,9 @@ const Header = () => {
   console.log(pathname);
 
   return (
-    <header className=' w-full px-5 py-4 lg:h-[112px] lg:px-[108px] lg:py-8 '>
+    <header
+      className={`w-full px-5 py-4 lg:h-[112px] lg:px-[108px] lg:py-8 ${className}`}
+    >
       <nav>
         {/* Mobile NavBar */}
         <div className='flex items-center justify-between  md:hidden'>

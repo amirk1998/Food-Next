@@ -6,7 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 
-const Footer = () => {
+const Footer = ({ className }) => {
   const [fullName, setFullName] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
   const [email, setEmail] = useState('');
@@ -18,7 +18,7 @@ const Footer = () => {
   };
 
   return (
-    <footer>
+    <footer className={`${className}`}>
       <div className='relative flex h-[152px] w-full lg:h-[319px] lg:max-h-[319px]'>
         <div className='absolute inset-0 z-0 max-h-[152px] w-full lg:max-h-[319px]'>
           <Image
