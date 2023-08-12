@@ -3,8 +3,8 @@
 import estedadFont from '@/constants/localFonts';
 import '../globals.css';
 
-import Footer from '../Footer';
-import Providers from '../Providers';
+import Footer from '../Footer.jsx';
+import Providers from '../Providers.jsx';
 import Header from '../Header';
 import { Toaster } from 'react-hot-toast';
 import toastOptions from '@/utils/toastOptions';
@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
       <body id='__next' className={`${estedadFont.variable} font-sans`}>
         <Providers>
           <Toaster position='top-center' toastOptions={toastOptions} />
-          <Header className={''} />
+          <Header className={'hidden lg:block'} />
           {children}
           <Footer className={'hidden lg:block'} />
         </Providers>

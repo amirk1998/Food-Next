@@ -12,7 +12,7 @@ const RESEND_TIME = 90;
 const AuthPage = () => {
   const [phoneNumber, setPhoneNumber] = useState('');
   const [otp, setOtp] = useState('');
-  const [step, setStep] = useState(2);
+  const [step, setStep] = useState(1);
   const [time, setTime] = useState(RESEND_TIME);
   const router = useRouter();
 
