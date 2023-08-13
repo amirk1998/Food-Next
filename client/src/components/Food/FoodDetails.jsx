@@ -84,7 +84,7 @@ const FoodDetails = ({ product }) => {
             {/* Row 2 */}
             <div className='flex flex-col '>
               {!!product.discount && (
-                <div className='flex items-center gap-x-2'>
+                <div className='flex items-center justify-between pl-2'>
                   <span className='font-normal leading-7  text-secondary-500 line-through lg:text-base xl:text-lg'>
                     {toPersianNumbersWithComma(product.price)}
                   </span>

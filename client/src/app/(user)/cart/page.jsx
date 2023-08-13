@@ -3,13 +3,12 @@
 import LoadingSpinner from '@/common/Loading';
 import { useGetUser } from '@/hooks/useAuth';
 import EmptyCartMobile from '@/public/icons/EmptyCartMobile';
-import bgMobile from '@/icons/EmptyCartMobile.svg';
-import Image from 'next/image';
 import Link from 'next/link';
 
 const CartPage = () => {
   const { data, isLoading } = useGetUser();
   const { user, cart } = data || {};
+  console.log(user);
 
   if (isLoading)
     return (
@@ -20,7 +19,7 @@ const CartPage = () => {
 
   if (!user || !data)
     return (
-      <div className='container lg:max-w-screen-lg'>
+      <div className='container flex flex-col items-center justify-center lg:max-w-screen-lg'>
         <p className='mb-4 font-bold text-secondary-700'>
           برای مشاهده سبد خرید ، لطفا لاگین کنید.
         </p>
